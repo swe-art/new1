@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        /* Grid Layout */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .gallery a {
+            text-decoration: none;
+            display: block;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Image Gallery</h1>
+
+    <div class="gallery">
+        <a href="image1-small.webp" target="_blank">
+            <img src="image1-small.webp" alt="A beautiful sunset over the mountains">
+        </a>
+        <a href="image2-small.webp" target="_blank">
+            <img src="image2-small.webp" alt="A close-up of vibrant autumn leaves">
+        </a>
+        <a href="image3-small.jpg" target="_blank">
+            <img src="image3-small.jpg" alt="A peaceful beach with crystal clear water">
+        </a>
+        <a href="image4-small.jpg" target="_blank">
+            <img src="image4-small.jpg" alt="A snowy landscape with tall pine trees">
+        </a>
+        <a href="image5-small.jpg" target="_blank">
+            <img src="image5-small.jpg" alt="A city skyline at night with illuminated buildings">
+        </a>
+        <a href="image6-small.jpg" target="_blank">
+            <img src="image6-small.jpg" alt="A field of colorful wildflowers in full bloom">
+        </a>
+        <a href="mou.jpg"target="_blank" >
+            <img src="mou.jpg" alt="">
+        </a>
+        <a href="village.jpg">
+            <img src="village.jpg" alt="">
+        </a>
+        <a href="rain.jpg">
+            <img src="rain.jpg" alt="">
+        </a>
+    </div>
+
+</body>
+</html>
+
+
